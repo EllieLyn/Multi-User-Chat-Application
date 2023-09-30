@@ -1,1 +1,25 @@
 # Multi-User-Chat-Application
+
+# This is a simple multi-user chat application implemented with Java multithreading concept
+# The design draft are the follow:
+User & Server
+1. User --> Server
+   * login / logoff
+   * status
+2. Server --> User
+   * online / offline
+3. User --> User
+   * direct messages
+   * broadcast messages / group messaging / #topic so that all users in the topic receives the message
+Commands:
+   login <user> <password>
+   logoff
+   msg<user> text...
+   i.e.
+   guest: "msg ellie Hello World"   <-- send
+   ellie: "msg guest Hello World"   <-- receive
+   #topic  <-- chatroom / group chat
+   join #topic
+   leave #topic
+   send: msg #topic body...
+   receive: msg #topic:<login> body...
